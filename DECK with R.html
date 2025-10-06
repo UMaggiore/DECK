@@ -388,7 +388,7 @@ deck_long &lt;- deck_long %&gt;%
 
 # Perform eGFR using splines
 deck_long &lt;- deck_long %&gt;%
-  mutate(mese_scaled = (mese - 1) / (72 - 1))  # Assuming mese ranges from 1 to 60
+  mutate(mese_scaled = (mese - 1) / (72 - 1))  # mese ranges from 1 to 72
 
 # Define knots at mese = 6, 24, 48 and rescale them
 knots_mese &lt;- c(6, 24, 48)
